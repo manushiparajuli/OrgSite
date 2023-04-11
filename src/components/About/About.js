@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ResumePic from "../../Assets/Projects/ResumePic.png";
-import Interview from "../../Assets/Projects/Interview.png";
-import Conference from "../../Assets/Projects/Conference.png";
-import Hackathons from "../../Assets/Projects/Hackathons.png";
+import ResumePic from "../../Assets/ResumePic.png";
+import Interview from "../../Assets/Interview.png";
+import Conference from "../../Assets/Conference.png";
+import Hackathons from "../../Assets/Hackathons.png";
 
 function About() {
   return (

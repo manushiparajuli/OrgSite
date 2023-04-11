@@ -1,5 +1,5 @@
-import Website from "./Assets/Projects/Website.png";
-import Youtube from "./Assets/Projects/Youtube.png";
+import Website from "./Assets/Website.png";
+import Youtube from "./Assets/Youtube.png";
 
 
 
