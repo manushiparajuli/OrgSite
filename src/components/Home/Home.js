@@ -1,8 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Calendar from "../Calendar";
-import myImg from "../../Assets/Logo.jpg";
+import myImg from "../../Assets/snapster.png";
 import Contact from "../Contact";
+import Img from "../../Assets/Login.png";
+
 
 
 function Home() {
@@ -16,10 +18,11 @@ function Home() {
             </Col>
             <Col md={5} className="home-header">
               <h1 style={{ paddingBottom: 5 }}>
-                Welcome To WeHack!{" "}
+                Welcome to snapster{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   🙋
                 </span>{" "}
+                <img src={Img} className="profile-pic" alt="avatar" />   
               </h1>
               </Col>
               </Row>

@@ -37,25 +37,25 @@ function NavBar() {
           <Nav className="mr-auto">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                 Home
+                 Login
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link as={Link} to="/about" onClick={() => updateExpanded(false)}>
-                About
+                My Profile
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link as={Link} to="/project" onClick={() => updateExpanded(false)}>
-               Projects
+               Photos/Videos
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link as={Link} to="/team" onClick={() => updateExpanded(false)}>
-                Our Team
+                Settings
               </Nav.Link>
             </Nav.Item>
           </Nav>

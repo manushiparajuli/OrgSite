@@ -8,7 +8,7 @@ import Future from "../Future";
 function Projects() {
   return (
     <div className="section" id="projects">
-              <h2 >Projects</h2>
+              <h2 >Contents</h2>
 
       <Container>
         <h2 style={{ paddingTop: 30 }}>Projects</h2>

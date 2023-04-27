@@ -1,4 +1,4 @@
-import Website from "./Assets/Website.png";
+import Website from "./Assets/download.jpg";
 import Youtube from "./Assets/Youtube.png";
 
 
@@ -6,14 +6,14 @@ import Youtube from "./Assets/Youtube.png";
 export const PROJECTS = [
   {
     image: Website,
-    name: "Wehack Website",
+    name: "Photos",
     technologyUsed: "",
     description: "",
     url: "#",
   },
   {
     image: Youtube,
-    name: "Youtube Videos",
+    name: "Videos",
     technologyUsed: "",
     description: "",
     url: "#",

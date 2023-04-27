@@ -1,89 +1,115 @@
-import React from "react";
-import exec1 from "../../Assets/Manushi.jpg";
-import exec2 from "../../Assets/Sambridee.jpg";
-import exec3 from "../../Assets/Yogi.jpeg";
-import exec4 from "../../Assets/Yogi.jpeg";
-import { Container, Row, Col, Card } from "react-bootstrap";
-import { useState, useEffect } from "react";
-import Advisor1 from "../../Assets/Advisor1.jpg";
-
+import React, { useState } from "react";
+import Img from "../../Assets/Settings.png";
 
 function Team() {
-  const [width, setWidth] = useState(1200);
+  const [isDownloadAllowed, setIsDownloadAllowed] = useState(false);
+  const [isNotificationEnabled, setIsNotificationEnabled] = useState(true);
+  const [isDeactivated, setIsDeactivated] = useState(false);
 
-  useEffect(() => {
-    function handleResize() {
-      setWidth(window.innerWidth);
-    }
+  function handleChangePassword() {
+    // Logic to handle password change goes here
+  }
 
-    window.addEventListener("resize", handleResize);
+  function handleToggleDownload() {
+    setIsDownloadAllowed(!isDownloadAllowed);
+  }
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  function handleToggleNotification() {
+    setIsNotificationEnabled(!isNotificationEnabled);
+  }
+
+  function handleToggleDeactivate() {
+    setIsDeactivated(!isDeactivated);
+  }
+
+  function handleDeleteAccount() {
+    // Logic to handle account deletion goes here
+  }
 
   return (
-    <Container fluid>
-      <div style={{ marginTop: '100px' }}> 
-      <h1>Meet Our Team</h1>          
-      <Row className="mt-3 team-row">
-        {[
-          {
-            name: "Manushi Parajuli",
-            position: "President",
-            photoUrl: exec1,
-          },
-          {
-            name: "Sambridee Mahat",
-            position: "Vice President",
-            photoUrl: exec2,
-          },
-          {
-            name: "Nishanth Goud",
-            position: "Technology Officer",
-            photoUrl: "#",
-            Intro: "Hi",
-          },
-          {
-            name: "Yogi Dalge",
-            position: "Tresurer",
-            photoUrl: exec4,
-          },
-        ].map((member, index) => (
-          <Col key={index} sm={6} md={3}>
-            <Card className="team-card">
-              <Card.Img variant="top" src={member.photoUrl} />
-              <Card.Body>
-                <Card.Title>{member.name}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">{member.position}</Card.Subtitle>
-                <Card.Subtitle className="Intro">{member.Intro}</Card.Subtitle>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-      <Row className="team-row">
-        {[
-          {
-            name: "Prof. Curtis Chambers",
-            position: "Advisor",
-            photoUrl: Advisor1,
-          },
-        ].map((member, index) => (
-          <Col key={index} sm={6} md={3}>
-            <Card className="team-card">
-              <Card.Img variant="top" src={member.photoUrl} />
-              <Card.Body>
-                <Card.Title>{member.name}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">{member.position}</Card.Subtitle>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
+    <div className="card-container">
+      <div className="card">
+      <p>-----------------------
+          -----------------
+          -------------
+          --------------
+          ---------------
+          -----------------
+          ---------------
+          -----------
+          ---------
+          ----------------
+          -
+        </p>
+        <img src={Img} className="settingsPic" alt="avatar" />
+        
       </div>
-    </Container>
+      <div className="card">
+        <p>-----------------------
+          -----------------
+          -------------
+          --------------
+          ---------------
+          -----------------
+          ---------------
+          -----------
+          ---------
+          ----------------
+          -
+        </p>
+        <div>
+          <button onClick={handleChangePassword}>Change Password</button>
+          <p></p>
+          <button onClick={handleToggleDownload}>
+            {isDownloadAllowed ? "Disallow Downloads" : "Allow Downloads"}
+          </button>
+          <p></p>
+          <button onClick={handleToggleNotification}>
+            {isNotificationEnabled ? "Disable Notifications" : "Enable Notifications"}
+          </button>
+          <p></p>
+        </div>
+        {isDeactivated ? (
+          <>
+            <button onClick={handleToggleDeactivate}>Reactivate Account</button>
+          </>
+        ) : (
+          <>
+            <button onClick={handleToggleDeactivate}>Deactivate Account</button>
+            <p></p>
+            <button onClick={handleDeleteAccount}>Delete Account</button>
+            <p> 
+            </p>
+            <p> 
+            </p>
+            <p> 
+            </p> <p> 
+            </p> <p> 
+            </p> <p> 
+            </p> <p> 
+            </p> <p> 
+            </p> <p> 
+            </p> <p> 
+            </p> <p> 
+            </p> <p> 
+            </p> <p> 
+            </p> <p> 
+            </p> <p> 
+            </p> <p> 
+            </p> <p> 
+            </p> <p> 
+            </p> <p> 
+            </p> <p> 
+            </p> <p> 
+            </p> <p> 
+            </p> <p> 
+            </p> 
+
+          </>
+          
+        )}
+      </div>
+    </div>
   );
 }
 

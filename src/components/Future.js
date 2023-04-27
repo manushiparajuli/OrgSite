@@ -16,11 +16,8 @@ function Future() {
     <div>
       <div>
         <Card 
-          title="Upcoming Event"
-          description={`Upcoming events include:\n
-                        • General Meeting\n
-                        • Collaborate with different departments to create YouTube video\n
-                        `}
+          title="Upload/Download Content"
+          
         />
       </div>
     </div>
