@@ -11,7 +11,7 @@ function Projects() {
               <h2 >Contents</h2>
 
       <Container>
-        <h2 style={{ paddingTop: 30 }}>Projects</h2>
+        <h2 style={{ paddingTop: 30 }}>Contents</h2>
         <Row className="justify-content-center">
           {PROJECTS.map((project, index) => (
             <Col lg={6} md={9} key={index}>
