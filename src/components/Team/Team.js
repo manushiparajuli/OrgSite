@@ -84,7 +84,7 @@ function Team() {
             <p></p>
             <button onClick={handleDeleteAccount}>Delete Account</button>
             <div>
-  <Button as={Link} to="/" variant="primary" size="lg">
+  <Button as={Link} to="/about" variant="primary" size="lg">
     Go Back
   </Button>
 </div>
