@@ -1,4 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+
+
 
 function Card({title, description}) {
   return (
@@ -19,6 +23,10 @@ function Future() {
           title="Upload/Download Content"
           
         />
+        
+        <Button as={Link} to="/about" variant="primary" size="lg">
+Go Back
+            </Button>
       </div>
     </div>
   );
