@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import Img from "../../Assets/Settings.png";
+import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+
+
 
 function Team() {
   const [isDownloadAllowed, setIsDownloadAllowed] = useState(false);
@@ -27,6 +31,7 @@ function Team() {
   }
 
   return (
+    
     <div className="card-container">
       <div className="card">
       <p>-----------------------
@@ -78,6 +83,12 @@ function Team() {
             <button onClick={handleToggleDeactivate}>Deactivate Account</button>
             <p></p>
             <button onClick={handleDeleteAccount}>Delete Account</button>
+            <div>
+  <Button as={Link} to="/" variant="primary" size="lg">
+    Go Back
+  </Button>
+</div>
+
             <p> 
             </p>
             <p> 
@@ -107,8 +118,10 @@ function Team() {
 
           </>
           
+          
         )}
       </div>
+      
     </div>
   );
 }
